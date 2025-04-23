@@ -18,7 +18,6 @@ public class Broker {
    public boolean subscribe (Subscriber sub){
       Topic topic;
       String topicName = sub.getTopicName();
-      topics.
       if ((topic=findTopic(topicName))!=null) {
          topic.subscribe(sub);
          return true;
