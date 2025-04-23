@@ -5,10 +5,10 @@ public class Topic {
 
    }
    public Topic(String topicName) {
-//....
+      subscribers = new ArrayList<Subscriber>();
    }
    public void subscribe(Subscriber sub){
-      //...
+      suscribers.add(sub);
    }
    public void notify(String message) {
    //...
