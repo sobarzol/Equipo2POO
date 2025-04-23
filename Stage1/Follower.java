@@ -8,7 +8,7 @@ public class Follower extends Subscriber {
    }
    public void update(String message) {
       //...
-      System.out.println(message);
+      out.println(name + " " + topicName + " " + message);
    }
    private PrintStream out;
 } 

@@ -6,12 +6,12 @@ public class Publisher extends Component {
          topic = broker.createTopic(topicName);
       }
       else{
-         topic = broker.find(topicName);
+         topic = broker.findTopic(topicName);
       }
    }
    protected void publishNewEvent(String message) {
 //..
-      if (topic==null) {
+      if (topic!=null) {
          topic.notify(message);
       }
 
