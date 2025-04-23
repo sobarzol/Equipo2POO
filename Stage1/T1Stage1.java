@@ -1,3 +1,4 @@
+
 import java.io.File;
 import java.io.PrintStream;
 import java.io.FileNotFoundException;
@@ -6,9 +7,9 @@ import java.util.Scanner;
 public class T1Stage1 {
    public static void main (String args[]) {
       if (args.length != 0) {
-            System.out.println("Usage: java T1Stage1");
-            System.exit(-1);
-        }
+         System.out.println("Usage: java T1Stage1");
+         System.exit(-1);
+      }
       T1Stage1 stage = new T1Stage1();
       stage.setupSimulator();
       stage.runSimulation();
