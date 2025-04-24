@@ -6,16 +6,9 @@ public class Broker {
    }
 
    public Topic createTopic (String topicName){
-
-      if (this.findTopic(topicName)==null){
-         Topic topic = new Topic(topicName);
-         topics.add(topic);
-         return topic;
-      }
-      else{
-         return this.findTopic(topicName);
-      }
-
+      Topic topic = new Topic(topicName);
+      topics.add(topic);
+      return topic;
    }
    public boolean subscribe (Subscriber sub){
       Topic topic;
